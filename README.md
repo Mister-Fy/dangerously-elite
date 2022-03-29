@@ -9,4 +9,4 @@ The HGE materials and their corresponding system states are as follows:
 3: Improvised Components - Independant systems which are in Civil Unrest, but not in Boom, Outbreak, Civil War or War states
 4: Military Grade Alloys/Supercapacitors - Independant systems which are in Civil War or War, but not in Boom, Outbreak or Civil Unrest states
 5: Pharmaceutical Isolators - Independant systems which are in Outbreak, but not in Boom, Civil War, War or Civil Unrest states
-6: Proto Heat Radiators/Radiolic Alloys - Independant systems which are in Boom, but not in Outbreak, Civil War, War or Civil Unrest states```
+6: Proto Heat Radiators/Radiolic Alloys - Independant systems which are in Boom, but not in Outbreak, Civil War, War or Civil Unrest states
