@@ -10,3 +10,5 @@ The HGE materials and their corresponding system states are as follows:
 4: Military Grade Alloys/Supercapacitors - Independant systems which are in Civil War or War, but not in Boom, Outbreak or Civil Unrest states
 5: Pharmaceutical Isolators - Independant systems which are in Outbreak, but not in Boom, Civil War, War or Civil Unrest states
 6: Proto Heat Radiators/Radiolic Alloys - Independant systems which are in Boom, but not in Outbreak, Civil War, War or Civil Unrest states
+```
+The latest update ensures that 2 special states aren't active simultaneously, thus diluting the chances of getting the HGEs you are searching for.
