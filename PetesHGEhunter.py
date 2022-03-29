@@ -61,7 +61,8 @@ def HGEhunter() :
         war = False #War
         out = False #Outbreak
         unr = False #Civil Unrest
-        hss = True #if any of the above are in the sys state, this is False (hst = HGE special state)
+        hss = True #if any of the above are in the sys state, this is False (hss = HGE special state)
+        sct = 0 #Counts number of special states are active simultaneously
         for stateGroup in states :
             state = stateGroup["name"] #Just grab the name of the state
             #if state != "None" :
@@ -69,18 +70,19 @@ def HGEhunter() :
             if (state=="Boom") :
                 bom = True
                 hss = False
-            elif (state=="Civil War") :
-                war = True
-                hss = False
+                sct = sct + 1
             elif (state=="Civil Unrest") :
                 unr = True
                 hss = False
+                sct = sct + 1
             elif (state=="Outbreak") :
                 out = True
                 hss = False
-            elif (state=="War") :
+                sct = sct + 1
+            elif (state=="War" or state=="Civil War") :
                 war = True
                 hss = False
+                sct = sct + 1
         countsys = 0
         match HGEnum_input:
             case 1:
@@ -102,19 +104,19 @@ def HGEhunter() :
                         sysName = rawEddbPopulatedSystem["name"]
                         outputSystems.append([int(pop), sysName])
             case 4:
-                if war and ind and (not hss) :
+                if war and ind and sct == 1 :
                     pop = int(rawEddbPopulatedSystem["population"])
                     if pop >= 1000000 :
                         sysName = rawEddbPopulatedSystem["name"]
                         outputSystems.append([int(pop), sysName])
             case 5:                          
-                if out and ind and (not hss) :
+                if out and ind and sct == 1 :
                     pop = int(rawEddbPopulatedSystem["population"])
                     if pop >= 1000000 :
                         sysName = rawEddbPopulatedSystem["name"]
                         outputSystems.append([int(pop), sysName])
             case 6:
-                if bom and ind and (not hss) :
+                if bom and ind and sct == 1 :
                     pop = int(rawEddbPopulatedSystem["population"])
                     if pop >= 5000000000 :
                         sysName = rawEddbPopulatedSystem["name"]
