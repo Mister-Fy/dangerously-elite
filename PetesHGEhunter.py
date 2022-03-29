@@ -150,7 +150,7 @@ def HGEhunter() :
         #print(index2)
         print(index3) 
     print() #newline
-    input("Press any key to exit - ")
+    input("Press the Enter key to exit - ")
 #====================================================================================================================================
 
 if __name__ == "__main__":
