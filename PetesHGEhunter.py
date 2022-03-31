@@ -53,7 +53,7 @@ def HGEhunter() :
             emp = True
         elif allegiance=="Federation" :
             fed = True
-        elif allegiance=="Independent" :
+        else :
             ind = True          
         states = rawEddbPopulatedSystem["states"] 
         #cleanStates = []
