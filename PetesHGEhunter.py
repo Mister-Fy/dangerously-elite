@@ -86,13 +86,13 @@ def HGEhunter() :
         countsys = 0
         match HGEnum_input:
             case 1:
-                if emp and hss :
+                if fed and hss :
                     pop = int(rawEddbPopulatedSystem["population"])
                     if pop >= 10000000000 :
                         sysName = rawEddbPopulatedSystem["name"]
                         outputSystems.append([int(pop), sysName])
             case 2:
-                if fed and hss :
+                if emp and hss :
                     pop = int(rawEddbPopulatedSystem["population"])
                     if pop >= 10000000000 :
                         sysName = rawEddbPopulatedSystem["name"]
