@@ -6,9 +6,9 @@ The HGE materials and their corresponding system states are as follows:
 ```
 1: Core Dynamics Composites - Federation systems which are not in Boom, Outbreak, Civil War, War or Civil Unrest states
 2: Imperial Shielding - Imperial systems which are not in Boom, Outbreak, Civil War, War or Civil Unrest states
-3: Improvised Components - Independant systems which are in Civil Unrest, but not in Boom, Outbreak, Civil War or War states
-4: Military Grade Alloys/Supercapacitors - Independant systems which are in Civil War or War, but not in Boom, Outbreak or Civil Unrest states
-5: Pharmaceutical Isolators - Independant systems which are in Outbreak, but not in Boom, Civil War, War or Civil Unrest states
-6: Proto Heat Radiators/Radiolic Alloys - Independant systems which are in Boom, but not in Outbreak, Civil War, War or Civil Unrest states
+3: Improvised Components - Independent systems which are in Civil Unrest, but not in Boom, Outbreak, Civil War or War states
+4: Military Grade Alloys/Supercapacitors - Independent systems which are in Civil War or War, but not in Boom, Outbreak or Civil Unrest states
+5: Pharmaceutical Isolators - Independent systems which are in Outbreak, but not in Boom, Civil War, War or Civil Unrest states
+6: Proto Heat Radiators/Radiolic Alloys - Independent systems which are in Boom, but not in Outbreak, Civil War, War or Civil Unrest states
 ```
 The latest update ensures that 2 or more special states aren't active simultaneously, thus diluting the chances of getting the HGEs you are searching for.
